@@ -1,0 +1,441 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #7b0907;
+  font-family: "Manrope", sans-serif;
+  color: #7b0907;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site {
+  width: min(430px, 100%);
+  margin: 0 auto;
+  background: #7b0907;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero-card {
+  padding: 34px 20px 26px;
+  background: #7b0907;
+}
+
+.phone-frame {
+  position: relative;
+  padding: 70px 26px 26px;
+  background: #f4eddf;
+  border: 2px solid #b58f83;
+  border-radius: 34px;
+  min-height: 720px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-frame::before,
+.phone-frame::after,
+.works-phone::before,
+.works-phone::after {
+  display: none;
+}
+
+h1 {
+  margin: 10px 0 8px;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 54px;
+  line-height: 0.9;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+h1 span {
+  display: block;
+}
+
+.service-label {
+  margin: 10px 0 18px;
+  font-family: "Great Vibes", cursive;
+  font-size: 22px;
+  color: #7b0907;
+  text-align: center;
+}
+
+.master-photo {
+  width: 240px;
+  height: 320px;
+  margin: 18px 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.master-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+
+.main-button,
+.outline-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 260px;
+  height: 36px;
+  border-radius: 22px;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.main-button {
+  margin-top: 20px;
+  background: #7b0907;
+  color: #f4eddf;
+}
+
+.outline-button {
+  margin-top: 7px;
+  border: 1px solid #b58f83;
+  color: #7b0907;
+  background: transparent;
+}
+
+/* WHY */
+.why-section {
+  padding: 34px 20px 38px;
+  background: #7b0907;
+}
+
+.why-section h2,
+.contacts-section h2 {
+  margin: 0 0 28px;
+  text-align: center;
+  color: #f4eddf;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 57px;
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.why-section h2::first-letter,
+.contacts-section h2::first-letter {
+  font-family: "Great Vibes", cursive;
+  font-size: 72px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.why-card,
+.why-image {
+  min-height: 155px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.why-card {
+  position: relative;
+  padding: 18px 14px;
+  color: #6f5b55;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.why-card span {
+  align-self: flex-end;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #7b0907;
+}
+
+.why-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 400;
+}
+
+.why-card.pink {
+  background: #f2b8c9;
+}
+
+.why-card.beige {
+  background: #e9dfcf;
+  border: 1px solid #b58f83;
+}
+
+.flower-card::before {
+  content: "✿";
+  position: absolute;
+  right: 14px;
+  bottom: -8px;
+  color: rgba(255, 255, 255, 0.33);
+  font-size: 105px;
+  line-height: 1;
+}
+
+.why-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SERVICES */
+.services-section {
+  padding: 45px 20px;
+  background: #efe5d3;
+  color: #7b0907;
+}
+
+.services-section h2 {
+  margin: 0 0 30px;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 57px;
+  font-weight: 400;
+}
+
+.services-list {
+  display: grid;
+  gap: 10px;
+}
+
+.services-list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 58px;
+  padding: 0 18px;
+  border: 1px solid #b58f83;
+  border-radius: 18px;
+}
+
+.services-list span {
+  font-size: 15px;
+}
+
+.services-list p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* WORKS */
+.works-section {
+  padding: 34px 20px;
+  background: #efe5d3;
+}
+
+.works-phone {
+  position: relative;
+  padding: 62px 14px 18px;
+  border: 2px solid #7b0907;
+  border-radius: 25px;
+  min-height: 720px;
+  background: #f4eddf;
+}
+
+.works-phone h2 {
+  margin: 0 0 22px;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+
+.works-phone h2 span::first-letter {
+  font-family: "Great Vibes", cursive;
+  font-size: 55px;
+  text-transform: none;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.works-grid img,
+.text-box {
+  height: 128px;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.works-grid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-box {
+  padding: 18px;
+  border: 1px solid #b58f83;
+  color: #6f5b55;
+  font-size: 15px;
+  line-height: 1.45;
+  display: flex;
+  align-items: center;
+}
+
+.outline-button.small {
+  margin-top: 18px;
+  height: 25px;
+  font-size: 10px;
+  max-width: none;
+}
+
+/* CONTACTS */
+.contacts-section {
+  padding: 34px 20px 26px;
+  background: #efe5d3;
+  border-top: 20px solid #7b0907;
+  text-align: center;
+}
+
+.contacts-section h2 {
+  color: #7b0907;
+  margin-bottom: 26px;
+}
+
+.contacts-section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 420px;
+  height: 42px;
+
+  margin: 0 auto 12px;
+
+  border: 1px solid #b58f83;
+  border-radius: 24px;
+
+  background: transparent;
+  color: #7b0907;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+}
+
+.meta {
+  margin: 25px 0 0;
+  color: #6f5b55;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+/* COMPUTER */
+@media (min-width: 900px) {
+  .site {
+    width: min(1000px, 95%);
+    margin: 30px auto;
+    border-radius: 36px;
+  }
+
+  .hero-card,
+  .why-section,
+  .services-section,
+  .works-section,
+  .contacts-section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .phone-frame,
+  .works-phone {
+    width: 100%;
+  }
+
+  .phone-frame {
+    min-height: 760px;
+    padding: 70px 50px 40px;
+  }
+
+  .master-photo {
+    width: 340px;
+    height: 450px;
+  }
+
+  .main-button,
+  .outline-button {
+    max-width: 420px;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .why-card,
+  .why-image {
+    min-height: 230px;
+  }
+
+  .services-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .services-list {
+    width: 100%;
+    max-width: none;
+  }
+
+  .works-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .works-grid img,
+  .text-box {
+    height: 210px;
+  }
+
+  .contacts-section a {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.contacts-text {
+  max-width: 520px;
+  margin: 0 auto 22px;
+  color: #6f5b55;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.social-btn {
+  transition: 0.3s;
+}
+
+.social-btn:hover {
+  background: #7b0907;
+  color: #f4eddf;
+}
